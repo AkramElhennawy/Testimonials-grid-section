@@ -1,0 +1,135 @@
+body{
+    background-color: hsl(0, 0%, 81%);
+    width: 1440px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Barlow Semi Condensed;
+    font-size: 13px;
+    color: hsl(0, 0%, 100%);
+}
+
+.container{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+.main-content{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.daniel{
+    grid-area: 1/1/2/3;
+    background-color: hsl(263, 55%, 52%);
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 80% 0;
+}
+
+.jonathan{
+    grid-area: 1/3/2/4;
+    background-color: hsl(217, 19%, 35%);
+}
+
+.kira{
+    grid-area: 1/4/3/5;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(219, 29%, 14%);
+}
+
+.jeanette{
+    grid-area: 2/1/3/2;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(219, 29%, 14%);
+}
+
+.patrick{
+    grid-area: 2/2/3/4;
+    background-color: hsl(219, 29%, 14%);
+}
+
+.profile{
+    border-radius: 10px;
+    padding: 20px 20px 20px 25px;
+}
+
+
+.profile-photo img{
+    border-radius: 50%;
+    width: 22px;
+    margin: 0 10px 10px 0;
+}
+
+.patrick img, .daniel img{
+    border: 1.5px solid hsl(263, 50%, 65%);
+}
+
+.photo-and-name{
+    display: flex;
+}
+
+.name{
+    display: flex;
+    flex-direction: column;
+}
+
+.name .person-name{
+    padding-left: 4px;
+    font-size: 11px;
+}
+
+.name .Verified{
+    padding-left: 4px;
+    font-size: 9px;
+    color: hsl(0, 0%, 50%);
+}
+
+.title{
+    font-size: 0.95rem;
+    padding-bottom: 12px;
+    padding-right: 10px;
+}
+
+.details{
+    font-size: 0.65rem;
+    color: hsl(0, 0%, 70%);
+    line-height: 1.30;
+}
+
+.attribution{
+    padding-top: 10px;
+    color: hsl(263, 55%, 52%);
+}
+
+@media (max-width:375px) {
+    body{
+        width: 375px;
+        padding-top: 250px;
+        padding-bottom: 250px;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    .main-content{
+        width: 252px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        flex-direction: column;
+    }
+
+    .kira{
+        display: grid;
+        order: 1;
+    }
+}
